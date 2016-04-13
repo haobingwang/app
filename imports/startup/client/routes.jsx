@@ -15,6 +15,7 @@ export const renderRoutes = () => (
 		<Route path="signin" component={SignIn}/>
 		<Route path="calcu" component={Calculator}/>
 		<Route path="blog" component={Blog}/>
+		<Route path="todo" component={TodoList}/>
 		<Route path="*" component={NotFoundPage}/>
 	</Router>
 );
