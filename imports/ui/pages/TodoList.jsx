@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import RaisedButton from 'material-ui/lib/raised-button';
 
 import Task from '../components/Task.jsx';
 
@@ -20,6 +21,7 @@ export default class TodoList extends Component {
 		return (
 			<div>
 				<h1>Todo List</h1>
+				<RaisedButton label="New" />
 				<ul>{this.renderTasks()}</ul>
 			</div>
 		);
