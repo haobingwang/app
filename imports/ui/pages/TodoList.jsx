@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import RaisedButton from 'material-ui/lib/raised-button';
+import DatePicker from 'material-ui/lib/date-picker/date-picker';
+import AppBar from 'material-ui/lib/app-bar';
+import TimePicker from 'material-ui/lib/time-picker/time-picker';
 
 import Task from '../components/Task.jsx';
 
@@ -23,6 +26,24 @@ export default class TodoList extends Component {
 				<h1>Todo List</h1>
 				<RaisedButton label="New" />
 				<ul>{this.renderTasks()}</ul>
+
+				<AppBar
+					title="Title"
+				/>
+
+				<DatePicker
+					ref="birthday"
+          			hintText="Birthday"
+          			autoOk={false}
+				/>
+
+				<TimePicker
+			      hintText="12hr Format"
+			    />
+			    <TimePicker
+			      format="24hr"
+			      hintText="24hr Format"
+			    />
 			</div>
 		);
 	}
