@@ -11,11 +11,12 @@ import NotFoundPage from '../../ui/pages/NotFoundPage.jsx';
 
 export const renderRoutes = () => (
 	<Router history={browserHistory}>
-		<Route path="/" component={App}></Route>
-		<Route path="signin" component={SignIn}/>
-		<Route path="calcu" component={Calculator}/>
-		<Route path="blog" component={Blog}/>
-		<Route path="todo" component={TodoList}/>
-		<Route path="*" component={NotFoundPage}/>
+		<Route path="/" component={App} />
+			<Route path="signin" component={SignIn}/>
+			<Route path="calcu" component={Calculator}/>
+			<Route path="blog" component={Blog}/>
+			<Route path="todo" component={TodoList}/>
+			<Route path="*" component={NotFoundPage}/>
+		{/*</Route>*/}
 	</Router>
 );
