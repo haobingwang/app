@@ -4,7 +4,7 @@ import AppBar from 'material-ui/AppBar';
 import BadgeExampleSimple from '../components/BadgeExampleSimple';
 import DatePickerExampleSimple from '../components/DatePickerExampleSimple';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import DarkRawTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+import DarkRawTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 
 const MaterialUi = React.createClass({
 	//the key passed through context must be called "muiTheme"
