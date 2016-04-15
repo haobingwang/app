@@ -2,7 +2,19 @@
   "name": "zhizunbo.com",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor run",
+    "lint": "eslint .",
+    "pretest":"npm run lint --silent"
+  },
+  "eslintConfig":{
+    "plugins": [
+      "meteor"
+    ],
+    "extends": [
+      "airbnb/base",
+      "plugin:meteor/recommended"
+    ],
+    "rules": {}
   },
   "dependencies": {
     "material-ui": "^0.15.0-beta.1",
@@ -11,5 +23,12 @@
     "react-dom": "^15.0.1",
     "react-router": "^2.2.2",
     "react-tap-event-plugin": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.7.0",
+    "eslint-config-airbnb": "^7.0.0",
+    "eslint-plugin-jsx-a11y": "^0.6.2",
+    "eslint-plugin-meteor": "^3.4.0",
+    "eslint-plugin-react": "^4.3.0"
   }
 }
