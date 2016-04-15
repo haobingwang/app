@@ -1,5 +1,5 @@
 {
-  "name": "zhizunbo.com",
+  "name": "app",
   "private": true,
   "scripts": {
     "start": "meteor run",
