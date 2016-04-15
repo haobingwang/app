@@ -7,17 +7,12 @@ import CircularProgressExampleSimple from '../components/CircularProgressExample
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import DarkRawTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 
-const MaterialUi = React.createClass({
-	//the key passed through context must be called "muiTheme"
-	childContextTypes : {
-		muiTheme: React.PropTypes.object,
-	},
-
+export default class MaterialUi extends Component {
 	getChildContext() {
 	    return {
 	      muiTheme: getMuiTheme(DarkRawTheme),
 	    };
-	},
+	}
 
 	render() {
 		return (
@@ -40,7 +35,10 @@ const MaterialUi = React.createClass({
 				<CircularProgressExampleSimple />
 			</div>
 		);
-	},
-});
+	}
+};
 
-export default MaterialUi;
+//the key passed through context must be called "muiTheme"
+MaterialUi.childContextTypes = {
+	muiTheme: React.PropTypes.object,
+}
