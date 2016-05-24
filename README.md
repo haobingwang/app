@@ -1,3 +1,3 @@
 # App
 
-添加自动化测试，再次触发
+[![Build Status](https://travis-ci.org/hobartwang/app.svg?branch=develop)](https://travis-ci.org/hobartwang/app)
